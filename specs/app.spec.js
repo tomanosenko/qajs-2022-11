@@ -23,11 +23,11 @@ test ('если имя не определено, оно не проходит '
   });
 
 test ('имя не является null', () => {
-  expect(nameIsValid('Toma')).not.toBeNull;
+  expect(nameIsValid('Toma')).not.toBeNull();
   });
 
-test ('имя не является null', () => {
-  expect(nameIsValid('Toma')).toBeDefined;
+test ('имя определено', () => {
+  expect(nameIsValid('Toma')).toBeDefined();
   });
 });
 
@@ -41,7 +41,7 @@ test ('с пустой строкой тоже всё работает', () => {
   });
 
 test ('значение пустой строки определено', () => {
-  expect(fullTrim('')).toBeDefined;
+  expect(fullTrim('')).toBeDefined();
   });
 
 test ('числа в строках тоже могут быть', () => {
